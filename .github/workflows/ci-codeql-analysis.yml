@@ -3,10 +3,7 @@ name: "CodeQL Analysis"
 on:
   workflow_call:
 
-permissions:
-  actions: read
-  contents: read
-  security-events: write
+permissions: read-all|write-all
 
 concurrency:
   group: codeql
